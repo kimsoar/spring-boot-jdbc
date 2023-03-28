@@ -1,0 +1,12 @@
+package me.jdbc.basic.JDBC.Basic.model;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class PgTable {
+
+    private String schemaName;
+    private String tableName;
+}
