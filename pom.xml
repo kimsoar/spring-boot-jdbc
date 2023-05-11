@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>me.jdbc.basic</groupId>
-	<artifactId>JDBC-Basic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>NewNameProgram</artifactId>
+	<version>0.1.1</version>
 	<name>JDBC-Basic</name>
 	<description>Demo JDBC for Spring Boot</description>
 	<properties>
