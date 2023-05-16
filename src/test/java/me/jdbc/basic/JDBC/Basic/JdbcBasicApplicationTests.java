@@ -1,6 +1,7 @@
 package me.jdbc.basic.JDBC.Basic;
 
 import me.jdbc.basic.JDBC.Basic.dao.JDBCTemplateDao;
+import me.jdbc.basic.JDBC.Basic.dao.JDBCTranService;
 import me.jdbc.basic.JDBC.Basic.dao.MultiRefcusorDao;
 import me.jdbc.basic.JDBC.Basic.dao.MultiRefcusorWithToMapDao;
 import me.jdbc.basic.JDBC.Basic.dto.CustomerRequest;
@@ -15,6 +16,19 @@ import java.util.Map;
 
 @SpringBootTest
 class JdbcBasicApplicationTests {
+
+	@Autowired
+	private JDBCTranService jdbcTranService;
+
+	@Test
+	void tranTest() {
+		jdbcTranService.run();
+	}
+
+	@Test
+	void contextTranTest() throws SQLException {
+		jdbcTranService.contextRun();
+	}
 
 	@Autowired
 	private MultiRefcusorDao multiRefcusorDao;
